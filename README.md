@@ -1,5 +1,5 @@
 # cse210-student-template
-Starter code!! Changed by Laura.
+Laura is changing the starter code yet again!
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
