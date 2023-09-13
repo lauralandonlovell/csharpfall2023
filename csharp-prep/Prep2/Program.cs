@@ -6,9 +6,9 @@ class Program
     {
         Console.Write("What is your grade percentage? ");
         string gradePercentage = Console.ReadLine();
-        Console.WriteLine(Convert.ToDouble(gradePercentage));
+        Console.WriteLine(Convert.ToInt32(gradePercentage));
 
-        
+
         
 
         
