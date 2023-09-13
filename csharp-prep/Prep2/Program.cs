@@ -9,14 +9,19 @@ class Program
         int grade = (Convert.ToInt32(gPercentage));
         Console.WriteLine(grade);
 
-        if (grade >= 60 && grade <= 100)
-        { 
-            Console.WriteLine("Congratulations you passed!");  
-            if (grade >= 80 && grade < 90 )
+        if (grade > 60 && grade >= 100)
+        {  
+            if (grade >= 90)
+            {
+                string hiGrade = "A";
+                Console.WriteLine(hiGrade)
+            }
+            else if (grade >= 80 && grade < 90 )
             {
                 string letterGrade = "B";
                 Console.WriteLine(letterGrade);
             }
+            
             else if (grade >= 70 && grade < 80)
             {
                 string midgrade = "C";
@@ -27,17 +32,15 @@ class Program
                 string lowGrade = "D";
                 Console.WriteLine(lowGrade);
             }
-        }
-        else if (grade >= 90)
-        {
-            string hiGrade = "A";
-            Console.WriteLine(hiGrade);
-        }
-        else
+            Console.WriteLine("Congratulations you passed!");
+        else 
         {
             string badGrade = "F";
             Console.WriteLine(badGrade);
+            Console.WriteLine("Sorry you didn't pass this time.");
         }
+       
+
 
         
 
