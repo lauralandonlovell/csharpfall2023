@@ -32,7 +32,7 @@ class Program
             string hiGrade = "A";
             Console.WriteLine(hiGrade);
         }
-        else (grade < 60)
+        else
         {
             string badGrade = "F";
             Console.WriteLine(badGrade);
