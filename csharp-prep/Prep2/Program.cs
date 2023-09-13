@@ -8,6 +8,9 @@ class Program
         string gPercentage = Console.ReadLine();
         int grade = (Convert.ToInt32(gPercentage));
         Console.WriteLine(grade);
+
+        if (grade > 60)
+        {}
         
 
         
