@@ -14,7 +14,7 @@ class Program
             if (grade >= 90)
             {
                 string hiGrade = "A";
-                Console.WriteLine(hiGrade)
+                Console.WriteLine(hiGrade);
             }
             else if (grade >= 80 && grade < 90 )
             {
@@ -33,12 +33,13 @@ class Program
                 Console.WriteLine(lowGrade);
             }
             Console.WriteLine("Congratulations you passed!");
-        else 
+        else
         {
             string badGrade = "F";
-            Console.WriteLine(badGrade);
-            Console.WriteLine("Sorry you didn't pass this time.");
-        }
+            Console.WriteLine($"Your grade was {badGrade}. Sorry you didn't pass. Better luck next time.");
+        } 
+
+
        
 
 
