@@ -33,7 +33,8 @@ class Program
                 Console.WriteLine(lowGrade);
             }
             Console.WriteLine("Congratulations you passed!");
-        else
+        }
+        else if
         {
             string badGrade = "F";
             Console.WriteLine($"Your grade was {badGrade}. Sorry you didn't pass. Better luck next time.");
