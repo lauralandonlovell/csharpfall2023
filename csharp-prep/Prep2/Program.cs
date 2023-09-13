@@ -5,8 +5,15 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("What is your grade percentage? ");
-        string gradePercentage = Console.ReadLine();
-        Console.WriteLine(Convert.ToInt32(gradePercentage));
+        string gPercentage = Console.ReadLine();
+        int grade = (Convert.ToInt32(gPercentage));
+        Console.WriteLine(grade);
+        
+
+        
+
+
+       
 
 
         
