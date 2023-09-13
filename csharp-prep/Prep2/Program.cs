@@ -10,7 +10,8 @@ class Program
         Console.WriteLine(grade);
 
         if (grade >= 60 && grade < 90)
-        {
+        {   
+        
             if (grade >= 80 && grade < 90 )
             {
                 string letterGrade = "B";
