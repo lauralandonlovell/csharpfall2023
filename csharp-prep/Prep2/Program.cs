@@ -9,7 +9,7 @@ class Program
         int grade = (Convert.ToInt32(gPercentage));
         Console.WriteLine(grade);
 
-        if (grade > 60 && grade >= 100)
+        if (grade > 60 && grade <= 100)
         {  
             if (grade >= 90)
             {
