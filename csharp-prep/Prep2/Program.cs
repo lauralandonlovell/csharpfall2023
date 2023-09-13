@@ -9,9 +9,9 @@ class Program
         int grade = (Convert.ToInt32(gPercentage));
         Console.WriteLine(grade);
 
-        if (grade >= 60 && grade < 90)
-        {   
-        
+        if (grade >= 60 && grade <= 100)
+        { 
+            Console.WriteLine("Congratulations you passed!");  
             if (grade >= 80 && grade < 90 )
             {
                 string letterGrade = "B";
