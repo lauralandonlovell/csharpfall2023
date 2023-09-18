@@ -7,10 +7,10 @@ class Program
     static void Main(string[] args)
     {
         //Getting user input
-        //Console.Write("Enter a magic number: ");
-        //var magicNum = /*Convert.ToChar*/(Console.ReadLine());
-        //Console.Write("Enter a guess: ");
-        //var userNum = Convert.ToChar(Console.ReadLine());
+        Console.Write("Enter a magic number: ");
+        var magicNum = Convert.ToChar(Console.ReadLine());
+        Console.Write("Enter a guess: ");
+        var userNum = Convert.ToChar(Console.ReadLine());
 
         //Console.WriteLine(Double.Parse(magicNum));
         //Console.WriteLine(Double.Parse(userNum));
@@ -22,23 +22,33 @@ class Program
         //Console.WriteLine(guessNum);
 
         //Getting input and converting to int
-        Console.WriteLine("Enter the magic number: ");
+        //Console.WriteLine("Enter the magic number: ");
         //int magicNum = Int32.Parse(Console.ReadLine());
         //var magNum = Console.ReadLine();
-        var magicNum = Console.ReadLine();
-        Console.WriteLine("Enter a guess: ");
-        var userNum = Int32.Parse(Console.ReadLine());
+        //var magicNum = Console.ReadLine();
+        //Console.WriteLine("Enter a guess: ");
+        //var userNum = Convert.To(Console.ReadLine());
         //var guessNum = Console.ReadLine();
         
 
         //if statement
-        if(userNum < magicNum)
+        if(userNum != magicNum)
         {
-            Console.WriteLine("Guess higher next time!");
+            int guess = Convert.ToInt32(userNum);
+            int magNum = Convert.ToInt32(magicNum);
+            if (guess < magNum)
+            {
+                Console.WriteLine("Guess higher!");
+            }
+            else if (guess > magNum)
+            {
+                Console.WriteLine("Guess lower!");
+            }
+        
         }
-        else if(userNum > magicNum)
+        else if(userNum == magicNum)
         {
-            Console.WriteLine("Guess lower next time!");
+            Console.WriteLine("Congratulations! You guessed it!");
         }
         else if(userNum == magicNum)
         {
