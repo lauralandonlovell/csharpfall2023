@@ -50,11 +50,8 @@ class Program
         {
             Console.WriteLine("Congratulations! You guessed it!");
         }
-        else if(userNum == magicNum)
-        {
-            Console.WriteLine("Congratulations, you guessed it!");
-        }
-        else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
+        //else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
+        else
         {
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
