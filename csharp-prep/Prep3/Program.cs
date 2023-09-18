@@ -13,7 +13,6 @@ class Program
         Console.WriteLine("Enter a guess: ");
         string userGuess = Console.ReadLine();
         Console.WriteLine(userGuess);
-        //Returning user input
          
         
 
