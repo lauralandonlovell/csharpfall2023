@@ -8,9 +8,9 @@ class Program
     {
         //Getting user input
         Console.Write("Enter a magic number: ");
-        int magicNum = Convert.ToInt32(Console.ReadLine());
+        var magicNum = Convert.ToChar(Console.ReadLine());
         Console.Write("Enter a guess: ");
-        int userNum = Convert.ToInt32(Console.ReadLine());
+        var userNum = Convert.ToChar(Console.ReadLine());
 
         //Console.WriteLine(Double.Parse(magicNum));
         //Console.WriteLine(Double.Parse(userNum));
@@ -30,7 +30,7 @@ class Program
         {
             Console.WriteLine("Guess lower next time!");
         }
-        else if(guessNum == magicNum)
+        else if(userNum == magicNum)
         {
             Console.WriteLine("Congratulations, you guessed it!");
         }
