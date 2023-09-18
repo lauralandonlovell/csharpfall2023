@@ -21,29 +21,30 @@ class Program
         //int guessNum = Int32.Parse(userNum);
         //Console.WriteLine(guessNum);
 
-        //Getting input and coverting to int
+        //Getting input and converting to int
         Console.WriteLine("Enter the magic number: ");
-        int magicNum = Int32.Parse(Console.ReadLine());
+        //int magicNum = Int32.Parse(Console.ReadLine());
+        var magNum = Console.ReadLine();
         Console.WriteLine("Enter a guess: ");
-        int userNum = Int32.Parse(Console.ReadLine());
+        //int userNum = Int32.Parse(Console.ReadLine());
         
 
         //if statement
-        if(userNum < magicNum)
+        if(userNum < magNum)
         {
             Console.WriteLine("Guess higher next time!");
         }
-        else if(userNum > magicNum)
+        else if(userNum > magNum)
         {
             Console.WriteLine("Guess lower next time!");
         }
-        else if(userNum == magicNum)
+        else if(userNum == magNum)
         {
             Console.WriteLine("Congratulations, you guessed it!");
         }
-        else
+        else 
         {
-            Console.WriteLine("Sorry, try another number!");
+            Console.WriteLine("Was that a number? I couldn't tell!");
         }
 
 
