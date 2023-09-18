@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        //If user enters letters that are not identical they are not caught by the else statement, if they are same it works
         //Getting user input
         Console.Write("Enter a magic number: ");
         int magicNum = Convert.ToChar(Console.ReadLine());
