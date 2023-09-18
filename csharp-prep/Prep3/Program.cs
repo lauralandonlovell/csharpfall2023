@@ -5,11 +5,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        //User input
+        //User input variables
         Console.Write("Enter a magic number: ");
-        string magicNum = "";
+        string magicNum = Console.ReadLine();
         Console.Write("Enter a guess: ");
-        string userNum = "";
+        string userNum = Console.ReadLine(); 
+
+        //Printing to console
+        
+        
 
         
         
