@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         //Asking for user input
-        Console.Write("Enter a magic number: ");
+        Console.WriteLine("Enter a magic number: ");
         //Getting user input
         string magicNum = Console.ReadLine();
         Console.WriteLine(magicNum);
@@ -16,7 +16,7 @@ class Program
         //Getting user input 
         string userGuess = Console.ReadLine();
         Console.WriteLine(userGuess);
-        
+
 
         //Importing Random class and instantiating
         //Random random = new Random();
