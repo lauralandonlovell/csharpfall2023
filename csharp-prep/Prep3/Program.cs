@@ -24,25 +24,27 @@ class Program
         //Getting input and converting to int
         Console.WriteLine("Enter the magic number: ");
         //int magicNum = Int32.Parse(Console.ReadLine());
-        var magNum = Console.ReadLine();
+        //var magNum = Console.ReadLine();
+        var magicNum = Console.ReadLine();
         Console.WriteLine("Enter a guess: ");
-        //int userNum = Int32.Parse(Console.ReadLine());
+        var userNum = Int32.Parse(Console.ReadLine());
+        //var guessNum = Console.ReadLine();
         
 
         //if statement
-        if(userNum < magNum)
+        if(userNum < magicNum)
         {
             Console.WriteLine("Guess higher next time!");
         }
-        else if(userNum > magNum)
+        else if(userNum > magicNum)
         {
             Console.WriteLine("Guess lower next time!");
         }
-        else if(userNum == magNum)
+        else if(userNum == magicNum)
         {
             Console.WriteLine("Congratulations, you guessed it!");
         }
-        else 
+        else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
         {
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
