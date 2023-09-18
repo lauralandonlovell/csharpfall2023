@@ -21,7 +21,12 @@ class Program
         //int guessNum = Int32.Parse(userNum);
         //Console.WriteLine(guessNum);
 
-
+        //Getting input and coverting to int
+        Console.WriteLine("Enter the magic number: ");
+        int magicNum = Int32.Parse(Console.ReadLine());
+        Console.WriteLine("Enter a guess: ");
+        int userNum = Int32.Parse(Console.ReadLine());
+        
 
         //if statement
         if(userNum < magicNum)
