@@ -53,8 +53,10 @@ class Program
         //else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
         else
         {
-            Convert.ToString(userNum, magicNum);
+            Convert.ToInt32(userNum);
+            Convert.ToInt32(magicNum);
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
+        
     }
 }
