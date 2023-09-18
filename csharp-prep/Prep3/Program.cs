@@ -7,10 +7,10 @@ class Program
     static void Main(string[] args)
     {
         //Getting user input
-        Console.Write("Enter a magic number: ");
-        var magicNum = Convert.ToChar(Console.ReadLine());
-        Console.Write("Enter a guess: ");
-        var userNum = Convert.ToChar(Console.ReadLine());
+        //Console.Write("Enter a magic number: ");
+        //var magicNum = /*Convert.ToChar*/(Console.ReadLine());
+        //Console.Write("Enter a guess: ");
+        //var userNum = Convert.ToChar(Console.ReadLine());
 
         //Console.WriteLine(Double.Parse(magicNum));
         //Console.WriteLine(Double.Parse(userNum));
@@ -20,6 +20,8 @@ class Program
         //Console.WriteLine(magicNum); 
         //int guessNum = Int32.Parse(userNum);
         //Console.WriteLine(guessNum);
+
+
 
         //if statement
         if(userNum < magicNum)
