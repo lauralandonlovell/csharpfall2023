@@ -56,10 +56,5 @@ class Program
             Convert.ToString(userNum, magicNum);
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
-
-
-
-
-
     }
 }
