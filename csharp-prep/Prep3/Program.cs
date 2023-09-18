@@ -44,12 +44,10 @@ class Program
             {
                 Console.WriteLine("Guess lower!");
             }
-        
-        
-            else if(userNum == magicNum)
-        {
-            Console.WriteLine("Congratulations! You guessed it!");
-        }
+            else if(guess == magNum)
+            {
+                Console.WriteLine("Congratulations! You guessed it!");
+            }
         //else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
         else
         {
