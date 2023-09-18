@@ -5,14 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Asking for user input
+        //Asking for user input and returning it to console
         Console.WriteLine("Enter a magic number: ");
-        Console.WriteLine("Enter a guess: ");
-        //Returning user input
         string magicNum = Console.ReadLine();
-        Console.WriteLine(magicNum); 
+        Console.WriteLine(magicNum);
+
+        Console.WriteLine("Enter a guess: ");
         string userGuess = Console.ReadLine();
         Console.WriteLine(userGuess);
+        //Returning user input
+         
+        
 
 
         //Importing Random class and instantiating
