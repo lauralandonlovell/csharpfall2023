@@ -38,10 +38,10 @@ class Program
                 Console.WriteLine("Was that a number? I couldn't tell!");
                 Console.WriteLine(magic);
                 Console.WriteLine(userGuess);
-            
             }
-        
+            Console.WriteLine("Guess again!");
         }
+
     }
     
 }
