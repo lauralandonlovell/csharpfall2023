@@ -6,7 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        //If user enters letters that are not identical they are not caught by the else statement, if they are same it works
+        /*I think that the conversion to char is causing problems because the program treats magicNum 6, guess 4 the same when values are c and 4. It says guess higher. I don't know why it can compare the number values correctly, but when there is a letter and number it always says guess higher but doesn't have an error.*/
+        
         //Getting user input
         Console.Write("Enter a magic number: ");
         int magicNum = Convert.ToChar(Console.ReadLine());
@@ -45,12 +46,11 @@ class Program
             {
                 Console.WriteLine("Guess lower!");
             }
-            else if(guess == magNum)
+        }
+        else if(userNum == magicNum)
             {
                 Console.WriteLine("Congratulations! You guessed it!");
             }
-        }
-        //else if(var userNum !> var magicNum && var userNum !< magicNum && var userNum != var magicNum)
         else
         {
             Convert.ToInt32(userNum);
