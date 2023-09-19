@@ -53,8 +53,8 @@ class Program
             }
         else
         {
-            Convert.ToInt32(userNum);
-            Convert.ToInt32(magicNum);
+            Convert.ToChar(userNum);
+            Convert.ToChar(magicNum);
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
         
