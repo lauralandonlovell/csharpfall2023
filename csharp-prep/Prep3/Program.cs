@@ -10,9 +10,9 @@ class Program
         
         //Getting user input
         Console.Write("Enter a magic number: ");
-        int magicNum = //Convert.ToChar(Console.ReadLine());
+        string magicNum = Console.ReadLine();//Convert.ToChar(Console.ReadLine());
         Console.Write("Enter a guess: ");
-        int userNum = //Convert.ToChar(Console.ReadLine());
+        string userNum = Console.ReadLine();//Convert.ToChar(Console.ReadLine());
 
         //Console.WriteLine(Double.Parse(magicNum));
         //Console.WriteLine(Double.Parse(userNum));
