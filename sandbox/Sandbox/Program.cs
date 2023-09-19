@@ -19,15 +19,15 @@ class Program
         string response = "yes";
         while (response != "yes")
         {
-            if (magNum != guess)
-                if (magNum > guess)
-                {
-                    Console.WriteLine("Guess higher!");
-                }
-                else if(magNum < guess)
-                {
-                    Console.WriteLine("Guess lower!");
-                }
+            //if (magNum != guess)
+            if (magNum > guess)
+            {
+                Console.WriteLine("Guess higher!");
+            }
+            else if(magNum < guess)
+            {
+                Console.WriteLine("Guess lower!");
+            }
         
             // //else if(magNum == guess)
             // {
