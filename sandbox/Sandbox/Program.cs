@@ -20,14 +20,14 @@ class Program
         while (response != "yes")
         {
             if (magNum != guess)
-            if (magNum > guess)
-            {
-                Console.WriteLine("Guess higher!");
-            }
-            else if(magNum < guess)
-            {
-                Console.WriteLine("Guess lower!");
-            }
+                if (magNum > guess)
+                {
+                    Console.WriteLine("Guess higher!");
+                }
+                else if(magNum < guess)
+                {
+                    Console.WriteLine("Guess lower!");
+                }
         
             // //else if(magNum == guess)
             // {
@@ -41,7 +41,8 @@ class Program
             //     Console.WriteLine(magic);
             //     Console.WriteLine(userGuess);
             //  }
-            Console.WriteLine("Guess again!");
+            Console.WriteLine("To keep guessing type yes: ");
+            response = Console.ReadLine();
         }
 
     }
