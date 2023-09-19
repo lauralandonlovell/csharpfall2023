@@ -19,34 +19,7 @@ class Program
         string response = "yes";
         while (response == "yes")
         {
-            Console.Write("Do you want to continue? ");
-            response = Console.ReadLine();
-            //if (magNum != guess)
-            if (magNum > guess)
-            {
-                Console.WriteLine("Guess higher!");
-            }
-            else if(magNum < guess)
-            {
-                Console.WriteLine("Guess lower!");
-            }
-        
-            // //else if(magNum == guess)
-            // {
-            //     Console.WriteLine("Congratulations! You guessed it!");
-            // }
-            // else
-            // {
-            //     string magic = Convert.ToString(magNum);
-            //     string userGuess = Convert.ToString(guess);
-            //     Console.WriteLine("Was that a number? I couldn't tell!");
-            //     Console.WriteLine(magic);
-            //     Console.WriteLine(userGuess);
-            //  }
-            Console.WriteLine("To keep guessing type yes: ");
-            response = Console.ReadLine();
+          
         }
-
-    }
-    
+    }    
 }
