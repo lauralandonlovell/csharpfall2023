@@ -38,19 +38,19 @@ class Program
         
 
         //if statement. (source I used for checking numberic values https://stackoverflow.com/questions/14304591/check-if-user-input-is-a-number)
-        if( != userNum)
+        if(magNum != guess)
         {
             
-            if (guess < magNum)
+            if (magNum > guess)
             {
                 Console.WriteLine("Guess higher!");
             }
-            else if (guess > magNum)
+            else if (magNum < guess)
             {
                 Console.WriteLine("Guess lower!");
             }
         }
-        else if(userNum == magicNum)
+        else if(magNum == guess)
             {
                 Console.WriteLine("Congratulations! You guessed it!");
             }
