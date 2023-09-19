@@ -34,10 +34,9 @@ class Program
         
 
         //if statement. (source I used for checking numberic values https://stackoverflow.com/questions/14304591/check-if-user-input-is-a-number)
-        if(userNum != magicNum)
+        if(magicNum != userNum)
         {
-            int guess = Convert.ToInt32(userNum);
-            int magNum = Convert.ToInt32(magicNum);
+            
             if (guess < magNum)
             {
                 Console.WriteLine("Guess higher!");
@@ -55,8 +54,7 @@ class Program
         {
             var guess = Convert.ToChar(userNum);
             var num = Convert.ToChar(magicNum);
-            Console.WriteLine(guess);
-            Console.WriteLine(num);
+            
             Console.WriteLine("Was that a number? I couldn't tell!");
         }
         
