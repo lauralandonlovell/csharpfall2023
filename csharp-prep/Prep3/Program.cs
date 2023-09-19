@@ -37,7 +37,7 @@ class Program
         //var guessNum = Console.ReadLine();
         
 
-        //if statement. (source I used for checking numberic values https://stackoverflow.com/questions/14304591/check-if-user-input-is-a-number)
+        /*if statement. (source I used for checking numberic values https://stackoverflow.com/questions/14304591/check-if-user-input-is-a-number) but I don't know how to implement it right now.*/
         if(magNum != guess)
         {
             
