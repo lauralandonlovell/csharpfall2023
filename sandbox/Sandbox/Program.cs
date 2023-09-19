@@ -16,31 +16,31 @@ class Program
         Console.WriteLine(magNum);
         Console.WriteLine(guess);
 
-        
-        while (magNum != guess)
+        string response = "yes";
+        while (response != "yes")
         {
-            
+            if (magNum != guess)
             if (magNum > guess)
             {
                 Console.WriteLine("Guess higher!");
             }
-            else if (magNum < guess)
+            else if(magNum < guess)
             {
                 Console.WriteLine("Guess lower!");
             }
         
-            else if(magNum == guess)
-            {
-                Console.WriteLine("Congratulations! You guessed it!");
-            }
-            else
-            {
-                string magic = Convert.ToString(magNum);
-                string userGuess = Convert.ToString(guess);
-                Console.WriteLine("Was that a number? I couldn't tell!");
-                Console.WriteLine(magic);
-                Console.WriteLine(userGuess);
-            }
+            // //else if(magNum == guess)
+            // {
+            //     Console.WriteLine("Congratulations! You guessed it!");
+            // }
+            // else
+            // {
+            //     string magic = Convert.ToString(magNum);
+            //     string userGuess = Convert.ToString(guess);
+            //     Console.WriteLine("Was that a number? I couldn't tell!");
+            //     Console.WriteLine(magic);
+            //     Console.WriteLine(userGuess);
+            //  }
             Console.WriteLine("Guess again!");
         }
 
