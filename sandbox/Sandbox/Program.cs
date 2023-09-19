@@ -17,8 +17,10 @@ class Program
         Console.WriteLine(guess);
 
         string response = "yes";
-        while (response != "yes")
+        while (response == "yes")
         {
+            Console.Write("Do you want to continue? ");
+            response = Console.ReadLine();
             //if (magNum != guess)
             if (magNum > guess)
             {
@@ -44,6 +46,7 @@ class Program
             Console.WriteLine("To keep guessing type yes: ");
             response = Console.ReadLine();
         }
+        Console.WriteLine()
 
     }
     
