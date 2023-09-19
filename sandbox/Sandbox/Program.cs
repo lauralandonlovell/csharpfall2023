@@ -46,7 +46,6 @@ class Program
             Console.WriteLine("To keep guessing type yes: ");
             response = Console.ReadLine();
         }
-        Console.WriteLine()
 
     }
     
