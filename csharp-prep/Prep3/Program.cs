@@ -56,10 +56,12 @@ class Program
             }
         else
         {
-            var guess = Convert.ToChar(userNum);
-            var num = Convert.ToChar(magicNum);
-            
+            string magic = Convert.ToString(magNum);
+            string userGuess = Convert.ToString(guess);
             Console.WriteLine("Was that a number? I couldn't tell!");
+            Console.WriteLine(magic);
+            Console.WriteLine(userGuess);
+            
         }
         
     }
