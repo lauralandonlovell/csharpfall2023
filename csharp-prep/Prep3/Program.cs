@@ -10,9 +10,9 @@ class Program
         
         //Getting user input
         Console.Write("Enter a magic number: ");
-        int magicNum = Convert.ToChar(Console.ReadLine());
+        int magicNum = //Convert.ToChar(Console.ReadLine());
         Console.Write("Enter a guess: ");
-        int userNum = Convert.ToChar(Console.ReadLine());
+        int userNum = //Convert.ToChar(Console.ReadLine());
 
         //Console.WriteLine(Double.Parse(magicNum));
         //Console.WriteLine(Double.Parse(userNum));
@@ -33,12 +33,12 @@ class Program
         //var guessNum = Console.ReadLine();
         
 
-        //if statement
+        //if statement. (source I used for checking numberic values https://stackoverflow.com/questions/14304591/check-if-user-input-is-a-number)
         if(userNum != magicNum)
         {
             int guess = Convert.ToInt32(userNum);
             int magNum = Convert.ToInt32(magicNum);
-            if (guess < magNum)
+            if (int.TryParse(guess < magNum))
             {
                 Console.WriteLine("Guess higher!");
             }
