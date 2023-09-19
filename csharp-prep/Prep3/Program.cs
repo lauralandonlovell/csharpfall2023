@@ -38,7 +38,7 @@ class Program
         {
             int guess = Convert.ToInt32(userNum);
             int magNum = Convert.ToInt32(magicNum);
-            if (int.TryParse(guess < magNum))
+            if (guess < magNum)
             {
                 Console.WriteLine("Guess higher!");
             }
