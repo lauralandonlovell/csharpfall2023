@@ -16,10 +16,7 @@ class Program
         Console.WriteLine(magNum);
         Console.WriteLine(guess);
 
-        string response = "yes";
-        while (response == "yes")
-        {
+        
           
-        }
-    }    
-}
+    }
+}    
