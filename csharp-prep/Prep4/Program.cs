@@ -27,8 +27,7 @@ class Program
         //Foreach loop to print numbers to the console
         foreach (int item in numbers)
         {
-            Console.Write(item);
-        }
-        
+            Console.WriteLine(item);
+        }    
     }
 }
