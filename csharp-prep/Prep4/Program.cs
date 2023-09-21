@@ -24,22 +24,21 @@ class Program
             number = int.Parse(Console.ReadLine());
             //Adding input to list
             numbers.Add(number);
+            //Foreach loop to print and add numbers
+            int total = 0;
+            foreach (int item in numbers)
+            {
+                total += item;    
+            }
+            Console.WriteLine($"The total is: {total}");
+            
+            for (int size = 0; size < numbers.Count; size++)
+            {
+                Console.WriteLine(size);
+            }
+             Console.WriteLine(numbers.Max());
+            Console.WriteLine($"The total is: {total}");
             i++;
         }while (number != 0);
-
-        //Foreach loop to print and add numbers
-        int total = 0;
-        foreach (int item in numbers)
-        {
-            total += item;    
-        }
-        Console.WriteLine($"The total is: {total}");
-        for (int size = 0; size < numbers.Count; size++)
-        {
-           
-            Console.WriteLine(size);
-        }
-
-        //Console.WriteLine($"Total = {total}, Average = {total / megaSize}, Maximum value = {}")
     }
 }
