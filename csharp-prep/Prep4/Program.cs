@@ -40,6 +40,6 @@ class Program
             Console.WriteLine(size);
         }
 
-        Console.WriteLine($"Total = {total}, Average = {total / megaSize}, Maximum value = {}")
+        //Console.WriteLine($"Total = {total}, Average = {total / megaSize}, Maximum value = {}")
     }
 }
