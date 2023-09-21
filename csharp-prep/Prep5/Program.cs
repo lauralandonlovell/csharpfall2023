@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 class Program
 {
@@ -8,7 +9,7 @@ class Program
         PrintWelcome();
         string person = UserName();
         int number = UserNumber();
-
+        decimal square = SquareNum(int UserNumber);
     }
 
     static void PrintWelcome()
@@ -23,13 +24,21 @@ class Program
 
         return name;
     }
-    static double UserNumber()
+    static int UserNumber()
     {
         Console.Write("Enter your favorite number: ");
         string number = Console.ReadLine();
-        double numBer = Convert.ToDouble(number);
+        int numBer = Convert.ToInt32(number);
         
-        return ;
-
+        return numBer;
+    }
+    static double SquareNum(double numSquare)
+    {
+        double sqr = numSquare * numSquare;
+        return sqr;
+    }
+    static void Result(string name, int square)
+    {
+        Console.WriteLine($"{name}, the number squared is {square}.");
     }
 }
