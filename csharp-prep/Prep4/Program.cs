@@ -21,13 +21,14 @@ class Program
             number = int.Parse(Console.ReadLine());
             //Adding input to list
             numbers.Add(number);
-
-            //Foreach loop to print numbers to the console
-            foreach (int item in numbers)
-            {
-                Console.Write(item);
-            }
             i++;
         }while (number != 0);
+
+        //Foreach loop to print numbers to the console
+        foreach (int item in numbers)
+        {
+            Console.Write(item);
+        }
+        
     }
 }
