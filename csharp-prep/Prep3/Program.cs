@@ -1,7 +1,3 @@
-
-
-
-
 string response = "yes";
 while (response == "yes")
 {
