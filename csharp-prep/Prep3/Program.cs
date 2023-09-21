@@ -4,11 +4,15 @@ using System.Security.Cryptography.X509Certificates;
 class Program
 {
     static void Main (string[] args)
-    {
+    {   
+        //No loop yet.
+        Console.Write("Enter a magic number: ");
+        string magicNum = Console.ReadLine();
+        Console.WriteLine(magicNum);
         
-        {
-            Console.WriteLine("Guess the magic number in 10 tries or less!\n");
-            // Instantiating new Random object to generate magic number
+        
+        /*Console.WriteLine("Guess the magic number in 10 tries or less!\n");
+        // Instantiating new Random object to generate magic number
             Random rndNumber = new Random();
             int magNum = rndNumber.Next(1, 100);
             string magic = Convert.ToString(magNum);
@@ -42,10 +46,10 @@ class Program
             else if (rando == userGuess)
             {
 
-            }
-            Console.WriteLine("Would you like to play again? Type yes or no: ");
-            response = Console.ReadLine();
-            Console.WriteLine(response);
-        }
+            }*/
+        Console.WriteLine("Would you like to play again? Type yes or no: ");
+        response = Console.ReadLine();
+        Console.WriteLine(response);
     }
 }
+
