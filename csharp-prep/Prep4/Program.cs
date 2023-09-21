@@ -36,8 +36,8 @@ class Program
         Console.WriteLine($"The total is: {total}");
         for (int size = 0; size < numbers.Count; size++)
         {
-            float megaSize = size;
-            Console.WriteLine(megaSize);
+           
+            Console.WriteLine(size);
         }
 
         Console.WriteLine($"Total = {total}, Average = {total / megaSize}, Maximum value = {}")
