@@ -28,23 +28,22 @@ string response = "yes";
 while (response == "yes")
 {
     Console.WriteLine("Guess the magic number in 10 tries or less!\n");
-    // Instantiating new Random object
+    // Instantiating new Random object to generate magic number
     Random magicNum = new Random();
     Console.WriteLine(magicNum);
-    string
-    //tracking guesses in string array
-    string[] guesses = new string[10];
-    for (int i = 1; i < guesses.Length; i++)
-    
-    
+
+    //tracking  by adding them to list,then array
+ 
+
+    for (int i = 1; i <     .Length; i++)
     {
-       
-        int rando = Convert.ToChar(magicNum.Next(1,100));
-        //converting int value to string so it can be compared to user input value
-        string randoNum = Convert.ToString(rando);
-        //tests
-        Console.WriteLine(i);
-        Console.WriteLine(randoNum);
+       int randomNumber = magicNum.Next(1,100);
+       string magNum = Convert.ToChar(randomNumber).ToString();
+       //test
+       Console.WriteLine(magNum);
+       .Add(); 
+    }
+    foreach(string item in )   
 
         //Getting user input guess
         Console.Write("Guess a number: ");

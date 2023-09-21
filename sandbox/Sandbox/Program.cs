@@ -1,21 +1,11 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Sandbox World!");
-        Console.Write("Enter a magic number: ");
-        string magicNum = Console.ReadLine();
-        Console.WriteLine(magicNum);
-        Console.Write("Enter a guess: ");
-        string userNum = Console.ReadLine();
-        int magNum = Convert.ToInt32(magicNum);
-        int guess = Convert.ToInt32(userNum);
-        Console.WriteLine(magNum);
-        Console.WriteLine(guess);
-
-        
-          
+             
     }
 }    
