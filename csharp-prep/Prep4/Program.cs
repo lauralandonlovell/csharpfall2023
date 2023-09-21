@@ -24,20 +24,16 @@ class Program
             number = int.Parse(Console.ReadLine());
             //Adding input to list
             numbers.Add(number);
-            //Foreach loop to print and add numbers
+            //Foreach loop to do math
             int total = 0;
             foreach (int item in numbers)
             {
                 total += item;    
             }
-            Console.WriteLine($"The total is: {total}");
-            
-            for (int size = 0; size < numbers.Count; size++)
-            {
-                Console.WriteLine(size);
-            }
-             Console.WriteLine(numbers.Max());
-            Console.WriteLine($"The total is: {total}");
+            Console.WriteLine($"The total is: {total}.");
+            int length = numbers.Count;
+            Console.WriteLine(length);
+            Console.WriteLine($"Total: {total} Average: {((float)total)/length} Max Value: {numbers.Max()}");
             i++;
         }while (number != 0);
     }
