@@ -50,8 +50,11 @@ class Program
                 tries++;
                 i++;
                 Console.WriteLine($@"Only ({tries}) guess(es) left!");
-            } while (guess <= 10);
+                /*Console.WriteLine("Would you like to keep guessing? yes or no");
+                string response = Console.ReadLine("yes");*/
 
+            } while (guess <= 10);
+            //Code above is working from VSCode debugger but not commandline. Build succeeds but run fails to execute. 0 problems are identified in the problem icon in the bar at the bottom. Error said "*You intended to run a global tool, but a dotnet-prefixed executable with this name could not be found on the PATH."
                 
 
 
@@ -60,26 +63,26 @@ class Program
 
 
 
-            // for (int i = 1; i < itries.Length; i++)
-            // {
-            //     int randomNumber = magNum.Next(1,100);
-            //     string magNum = Convert.ToChar(randomNumber).ToString();
-            //     //test
-            //     Console.WriteLine(magNum);
-            //     .Add(); 
-            // }
-            // foreach(string item in )   
-            // {
-            //     //Getting user input guess
-            //     Console.Write("Guess a number: ");
-            //     string guess = Console.ReadLine();
-            // }
-            //Conditions
+            /* for (int i = 1; i < itries.Length; i++)
+             {
+                int randomNumber = magNum.Next(1,100);
+                 string magNum = Convert.ToChar(randomNumber).ToString();
+                 //test
+                 Console.WriteLine(magNum);
+                 .Add(); 
+             }
+             foreach(string item in )   
+             {
+                 //Getting user input guess
+                 Console.Write("Guess a number: ");
+                 string guess = Console.ReadLine();
+             }
+            Conditions
             
             
-        // Console.WriteLine("Would you like to play again? Type yes or no: ");
-        // response = Console.ReadLine();
-        // Console.WriteLine(response);
+           Console.WriteLine("Would you like to play again? Type yes or no: ");
+           response = Console.ReadLine();
+           Console.WriteLine(response);*/
     }
 }
 
