@@ -47,7 +47,7 @@ class Program
                 {
                     Console.WriteLine("Was that a number? Try again.");
                 }
-                //tries++;
+                tries++;
                 i++;
                 Console.WriteLine($@"Only ({tries}) guess(es) left!");
             } while (guess <= 10);
