@@ -36,5 +36,6 @@ class Program
             Console.WriteLine($"Total: {total} Average: {((float)total)/length} Max Value: {numbers.Max()}");
             i++;
         }while (number != 0);
+        //Console.WriteLine($"Total: {total} Average: {((float)total)/length} Max Value: {numbers.Max()}");
     }
 }
