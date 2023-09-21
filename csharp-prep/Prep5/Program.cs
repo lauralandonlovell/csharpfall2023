@@ -9,7 +9,9 @@ class Program
         PrintWelcome();
         string person = UserName();
         int number = UserNumber();
-        decimal square = SquareNum(int UserNumber);
+        int square = SquareNum(number);
+        
+        Result(person, square);
     }
 
     static void PrintWelcome()
@@ -32,9 +34,9 @@ class Program
         
         return numBer;
     }
-    static double SquareNum(double numSquare)
+    static int SquareNum(int numSquare)
     {
-        double sqr = numSquare * numSquare;
+        int sqr = numSquare * numSquare;
         return sqr;
     }
     static void Result(string name, int square)
