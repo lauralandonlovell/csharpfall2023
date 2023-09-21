@@ -20,10 +20,10 @@ class Program
                List<int> itries = new List<int>();
                Console.WriteLine("Guess a number: ");
                string guess = Console.ReadLine();*/
-            //Setting variable to contain tries count
-            int tries = -10;
-            //Setting variable to contain iteration count 
-            int i = 1;
+            //Setting variable to contain tries 
+            int tries = 10;
+            //Setting variable to contain iteration count to negative value so it will count down the amount of tries. 
+            int i = -1;
             //chose do-while loop so that incrementation is the same as input frequency
             do
             {
@@ -49,7 +49,7 @@ class Program
                 }
                 tries++;
                 i++;
-                Console.WriteLine($@"Only ({tries}-{i}) guess(es) left!");
+                Console.WriteLine($@"Only ({tries}) guess(es) left!");
             } while (guess <= 10);
 
                 
