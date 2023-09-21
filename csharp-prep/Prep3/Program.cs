@@ -29,13 +29,13 @@ while (response == "yes")
 {
     Console.WriteLine("Guess the magic number in 10 tries or less!\n");
     // Instantiating new Random object to generate magic number
-    Random magicNum = new Random();
-    Console.WriteLine(magicNum);
-
-    //tracking  by adding them to list,then array
- 
-
-    for (int i = 1; i <     .Length; i++)
+    Random rndNumber = new Random();
+    int magNum = rndNumber.Next(1, 100);
+    string magic = Convert.ToString(magNum);
+    List<int> itries = new List<int>();
+    Console.WriteLine("Guess a number: ");
+    string guess = Console.ReadLine();
+    for (int i = 1; i < itries.Length; i++)
     {
        int randomNumber = magicNum.Next(1,100);
        string magNum = Convert.ToChar(randomNumber).ToString();
@@ -64,7 +64,7 @@ while (response == "yes")
  
 
 
-    }Console.WriteLine("Would you like to play again? Type yes or no: ");
-    response = Console.ReadLine();
-    Console.WriteLine(response);
+    // }Console.WriteLine("Would you like to play again? Type yes or no: ");
+    // response = Console.ReadLine();
+    // Console.WriteLine(response);
 }
