@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
@@ -24,10 +27,19 @@ class Program
             i++;
         }while (number != 0);
 
-        //Foreach loop to print numbers to the console
+        //Foreach loop to print and add numbers
+        int total = 0;
         foreach (int item in numbers)
         {
-            Console.WriteLine(item);
-        }    
+            total += item;    
+        }
+        Console.WriteLine($"The total is: {total}");
+        for (int size = 0; size < numbers.Count; size++)
+        {
+            float megaSize = size;
+            Console.WriteLine(megaSize);
+        }
+
+        Console.WriteLine($"Total = {total}, Average = {total / megaSize}, Maximum value = {}")
     }
 }
