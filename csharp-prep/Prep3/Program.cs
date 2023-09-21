@@ -5,8 +5,7 @@ class Program
 {
     static void Main (string[] args)
     {
-        string response = "yes";
-        while (response == "yes")
+        
         {
             Console.WriteLine("Guess the magic number in 10 tries or less!\n");
             // Instantiating new Random object to generate magic number
