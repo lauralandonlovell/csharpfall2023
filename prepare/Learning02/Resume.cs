@@ -6,7 +6,7 @@ public class Resume
 
     public void Display()
     {
-        Console.WriteLine($"Name: {_firstName}, {_lastName}");
+        Console.WriteLine($"Name: {_lastName}, {_firstName}");
         Console.WriteLine("Jobs:");
         foreach(Job job in _jobs)
         {
