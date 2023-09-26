@@ -1,3 +1,4 @@
+using System;
 public class Signature
 {
     public string _firstName;
@@ -7,7 +8,7 @@ public class Signature
     }
     public void Display()
     {
-        Console.WriteLine($"\n{firstName} {lastName}\n");
+        Console.WriteLine($"\n{_firstName} {_lastName}\n");
     }   
 }
 
