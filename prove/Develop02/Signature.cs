@@ -8,7 +8,7 @@ public class Signature
     }
     public void Display()
     {
-        Console.WriteLine($"\n{_firstName} {_lastName}\n");
+        Console.WriteLine($"{_firstName} {_lastName}");
     }   
 }
 
