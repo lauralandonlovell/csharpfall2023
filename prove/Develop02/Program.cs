@@ -49,7 +49,7 @@ class Program
         //code for Entry
         Entry entry1 = new Entry();
         entry1._date = DateTime.Today;
-        
+        //random prompt
         entry1._prompts.Add(prompt1);
         entry1._prompts.Add(prompt2);
         entry1._prompts.Add(prompt3);
@@ -57,7 +57,9 @@ class Program
         entry1._prompts.Add(prompt5);
         entry1._prompts.Add(prompt6);
         entry1._prompts.Add(prompt7);
-
+        //other features
+        
+        entry1._textEntry = Console.WriteLine(${prompt})
         entry1.Display();
         
         
