@@ -13,6 +13,12 @@ public class Entry
     public void Display()
     {
         Console.WriteLine($"Date: {_date}");
+        foreach(Prompt prompt in _prompts)
+            {
+            //Generating a random index for _prompts array. Found info on Random() at https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-7.0
+                Random entryPrompt = new Random();
+                Console.WriteLine(prompt);
+            }
     }
 
 }
