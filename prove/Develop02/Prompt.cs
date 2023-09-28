@@ -6,7 +6,7 @@ public class Prompt
     public Prompt()
     {
     }
-    public 
+    public void Display()
     {
         {
             //Generating a random index for _prompts array. Found info on Random() at https://learn.microsoft.com/en-us/dotnet/api/system.random?view=net-7.0
