@@ -4,6 +4,10 @@ public class Resume
     public string _lastName;
     public List<Job> _jobs = new List<Job>();
 
+    public Resume()
+    {
+    }
+
     public void Display()
     {
         Console.WriteLine($"Name: {_lastName}, {_firstName}");

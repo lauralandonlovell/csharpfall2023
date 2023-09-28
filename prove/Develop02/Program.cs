@@ -29,16 +29,38 @@ class Program
         }while(item != "5");
        
         
-        //code for Entry
+        
         //code for Prompt
         Prompt prompt1 = new Prompt();
-        prompt1._prompts = "Today was wonderful because...";
+        prompt1._entryPrompt = "Today was wonderful because...";
         Prompt prompt2 = new Prompt();
-        prompt2._prompts = "Today I felt the Spirit with me when...";
+        prompt2._entryPrompt = "Today I felt the Spirit with me when...";
+        Prompt prompt3 = new Prompt();
+        prompt3._entryPrompt = "I enjoyed helping when I...";
+        Prompt prompt4 = new Prompt();
+        prompt4._entryPrompt = "Today I was grateful for...";
+        Prompt prompt5 = new Prompt();
+        prompt5._entryPrompt = "Today I had a really good day because...";
+        Prompt prompt6 = new Prompt();
+        prompt6._entryPrompt = "One challenge I overcame today was...";
+        Prompt prompt7 = new Prompt();
+        prompt7._entryPrompt = "I really like myself because...";
+
+        //code for Entry
+        Entry entry1 = new Entry();
+        entry1._date = DateTime.Today;
         
-        List<Prompt>_prompts = new List<Prompt>();
+        entry1._prompts.Add(prompt1);
+        entry1._prompts.Add(prompt2);
+        entry1._prompts.Add(prompt3);
+        entry1._prompts.Add(prompt4);
+        entry1._prompts.Add(prompt5);
+        entry1._prompts.Add(prompt6);
+        entry1._prompts.Add(prompt7);
+
+        entry1.Display();
         
-        {"Today was wonderful because...","Today I felt the Spirit with me when...","I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...", "One challenge I overcame today was...", "I really like myself because..."};
+        
         
         
         
