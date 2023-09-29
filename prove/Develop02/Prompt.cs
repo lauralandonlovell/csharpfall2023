@@ -1,18 +1,19 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 public class Prompt
 {
-    //creating a way to get a list of prompts into Entry class
-    public string _entryPrompt;
+    //creating list which will be shuffled in Entry class
+    public List<string> _prompts = new List<string>(){"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
+
 
     public Prompt()
     {
     }
     public void Display()
     {
-        {
-            Console.WriteLine($"\n{_entryPrompt}\n\n");        
-        }
-      
+        Console.WriteLine(_prompts);
+
+        
     }
 }

@@ -14,6 +14,12 @@ public class Entry
     public void Display()
     {
         Console.WriteLine($"Date: {_date}");
+        //found shuffle list info at https://codelikeadev.com/blog/shuffle-list-csharp
+        
+        for(Prompt prompt in _prompts)
+        {
+
+        }
     }
     
 }
