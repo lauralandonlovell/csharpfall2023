@@ -59,9 +59,6 @@ class Program
         entry1._entryPrompts.Add(prompt9);
         entry1._entryPrompts.Add(prompt10);
         
-        entry1._textEntry =  "0"; 
-
-
         //code for Signature
         
 

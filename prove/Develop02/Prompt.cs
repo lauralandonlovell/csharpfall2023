@@ -17,25 +17,23 @@ public class Prompt
     public string _badDayAgainPrompt;
     public string _problemSolvedPrompt;
     public string _lifeIsAmazingPrompt;
-    public List<string>_prompts = new List<string>();
+    public string[]_prompts = new string[9];
     
     public Prompt()
     {
     }
     public void Display()
     { 
-        _prompts.Add(_weatherPrompt);
-        _prompts.Add(_spiritualPrompt);
-        _prompts.Add(_helpfulPrompt);
-        _prompts.Add(_gratefulPrompt);
-        _prompts.Add(_goodDayPrompt);
-        _prompts.Add(_walkingOnSunshinePrompt);
-        _prompts.Add(_badDayPrompt);
-        _prompts.Add(_badDayAgainPrompt);
-        _prompts.Add(_problemSolvedPrompt);
-        _prompts.Add(_lifeIsAmazingPrompt);
+        _prompts[0] = _weatherPrompt;
+        _prompts[1] = _spiritualPrompt;
+        _prompts[2] = _helpfulPrompt;
+        _prompts[3] = _gratefulPrompt;
+        _prompts[4] = _goodDayPrompt;
+        _prompts[5] = _walkingOnSunshinePrompt;
+        _prompts [6] = _badDayPrompt;
+        _prompts[7] = _badDayAgainPrompt;
+        _prompts[8] = _problemSolvedPrompt;
+        _prompts[9] = _lifeIsAmazingPrompt;
         Console.WriteLine(_prompts);
-        Array _promptArray = _prompts.ToArray();
-        Console.WriteLine(_promptArray);
     }
 }
