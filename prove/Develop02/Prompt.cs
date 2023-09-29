@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 public class Prompt
 {
     //creating list which will be shuffled in Entry class. info source: https://stackoverflow.com/questions/36401282/passing-listobject-between-classes.
@@ -16,14 +17,26 @@ public class Prompt
     public string _badDayAgainPrompt;
     public string _problemSolvedPrompt;
     public string _lifeIsAmazingPrompt;
-    //List<string>_journalPrompts = new List<string>(){_weatherPrompt, _spiritualPrompt, _helpfulPrompt, _gratefulPrompt, _goodDayPrompt, _walkingOnSunshinePrompt, _badDayPrompt, _badDayAgainPrompt, _problemSolvedPrompt, _lifeIsAmazingPrompt};
-
-
+    public List<string>_prompts = new List<string>();
+    
     public Prompt()
     {
     }
-    public void allPrompts()
-    {
-        Console.WriteLine(_journalPrompts);
+    public void Display()
+    { 
+        foreach (string prompt in _prompts)
+        {
+            _prompts.Add(_weatherPrompt);
+            _prompts.Add(_spiritualPrompt);
+            _prompts.Add(_helpfulPrompt);
+            _prompts.Add(_gratefulPrompt);
+            _prompts.Add(_goodDayPrompt);
+            _prompts.Add(_walkingOnSunshinePrompt);
+            _prompts.Add(_badDayPrompt);
+            _prompts.Add(_badDayAgainPrompt);
+            _prompts.Add(_problemSolvedPrompt);
+            _prompts.Add(_lifeIsAmazingPrompt);
+        }
+        Console.WriteLine(_prompts);
     }
 }
