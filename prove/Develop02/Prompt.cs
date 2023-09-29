@@ -16,7 +16,7 @@ public class Prompt
     public string _badDayAgainPrompt;
     public string _problemSolvedPrompt;
     public string _lifeIsAmazingPrompt;
-    
+    //List<string>_journalPrompts = new List<string>(){_weatherPrompt, _spiritualPrompt, _helpfulPrompt, _gratefulPrompt, _goodDayPrompt, _walkingOnSunshinePrompt, _badDayPrompt, _badDayAgainPrompt, _problemSolvedPrompt, _lifeIsAmazingPrompt};
 
 
     public Prompt()
@@ -24,7 +24,6 @@ public class Prompt
     }
     public void allPrompts()
     {
-        List<string>_journalPrompts = new List<string>(){_weatherPrompt, _spiritualPrompt, _helpfulPrompt, _gratefulPrompt, _goodDayPrompt, _walkingOnSunshinePrompt, _badDayPrompt, _badDayAgainPrompt, _problemSolvedPrompt, _lifeIsAmazingPrompt};
         Console.WriteLine(_journalPrompts);
     }
 }

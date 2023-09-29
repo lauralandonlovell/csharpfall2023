@@ -31,28 +31,49 @@ class Program
         {"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
         
         //code for Prompt
-        public string _weatherPrompt;
-        public string _spiritualPrompt;
-        public string _helpfulPrompt;
-        public string _gratefulPrompt;
-        public string _goodDayPrompt;
-        public string _walkingOnSunshinePrompt;
-        public string _badDayPrompt;
-        public string _badDayAgainPrompt;
-        public string _problemSolvedPrompt;
-        public string _lifeIsAmazingPrompt;
-        {"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
-
+        Prompt prompt1 = new Prompt();
+        prompt1._weatherPrompt = "Today was wonderful because...";
+        Prompt prompt2 = new Prompt();
+        prompt2._spiritualPrompt = "Today I felt the Spirit with me when...";
+        Prompt prompt3 = new Prompt();
+        prompt3._helpfulPrompt = "I enjoyed helping when I...";
+        Prompt prompt4 = new Prompt();
+        prompt4._gratefulPrompt = "Today I was grateful for...";
+        Prompt prompt5 = new Prompt();
+        prompt5._goodDayPrompt = "Today I had a good day because...";
+        Prompt prompt6 = new Prompt();
+        prompt6._walkingOnSunshinePrompt = "The songs that helped me get up in the morning today were...";
+        Prompt prompt7 = new Prompt();
+        prompt7._badDayPrompt = "Today I had a bad because...";
+        Prompt prompt8 = new Prompt();
+        prompt8._badDayAgainPrompt = "I had a bad day again, but today I...";
+        Prompt prompt9 = new Prompt();
+        prompt9._problemSolvedPrompt = "I prayed that I would be helped through my problems and ...";
+        Prompt prompt10 = new Prompt();
+        prompt10._lifeIsAmazingPrompt = "I saw my prayers answered today because...";
+       
         //code for Entry
         Entry entry1 = new Entry();
         entry1._date = DateTime.Today;
+
+        entry1._prompts.Add(prompt1);
+        entry1._prompts.Add(prompt2);
+        entry1._prompts.Add(prompt3);
+        entry1._prompts.Add(prompt4);
+        entry1._prompts.Add(prompt5);
+        entry1._prompts.Add(prompt6);
+        entry1._prompts.Add(prompt7);
+        entry1._prompts.Add(prompt8);
+        entry1._prompts.Add(prompt9);
+        entry1._prompts.Add(prompt10);
+        //Prompts added to List 
         
-
-
+        entry1._textEntry = Console.WriteLine();
+        entry1.Display();
         //other features
         
-        entry1._textEntry = ""
-        entry1.Display();
+        
+        
         
         
         
