@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+
 public class Prompt
 {
     //creating list which will be shuffled in Entry class. info source: https://stackoverflow.com/questions/36401282/passing-listobject-between-classes.
@@ -30,7 +31,7 @@ public class Prompt
         _prompts[3] = _gratefulPrompt;
         _prompts[4] = _goodDayPrompt;
         _prompts[5] = _walkingOnSunshinePrompt;
-        _prompts [6] = _badDayPrompt;
+        _prompts[6] = _badDayPrompt;
         _prompts[7] = _badDayAgainPrompt;
         _prompts[8] = _problemSolvedPrompt;
         _prompts[9] = _lifeIsAmazingPrompt;

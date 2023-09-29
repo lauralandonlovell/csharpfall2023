@@ -6,7 +6,7 @@ public class Entry
     public DateTime _date;
     public string _textEntry;
     public string _signature;
-    public List<Prompt> _entryPrompts = new List<Prompt>();
+    public Array[] _entryPrompts = new Array[9];
     
     public Entry()
     {
@@ -17,5 +17,6 @@ public class Entry
        
        
     }
+    
     
 }
