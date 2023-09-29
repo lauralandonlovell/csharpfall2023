@@ -24,19 +24,18 @@ public class Prompt
     }
     public void Display()
     { 
-        foreach (string prompt in _prompts)
-        {
-            _prompts.Add(_weatherPrompt);
-            _prompts.Add(_spiritualPrompt);
-            _prompts.Add(_helpfulPrompt);
-            _prompts.Add(_gratefulPrompt);
-            _prompts.Add(_goodDayPrompt);
-            _prompts.Add(_walkingOnSunshinePrompt);
-            _prompts.Add(_badDayPrompt);
-            _prompts.Add(_badDayAgainPrompt);
-            _prompts.Add(_problemSolvedPrompt);
-            _prompts.Add(_lifeIsAmazingPrompt);
-        }
+        _prompts.Add(_weatherPrompt);
+        _prompts.Add(_spiritualPrompt);
+        _prompts.Add(_helpfulPrompt);
+        _prompts.Add(_gratefulPrompt);
+        _prompts.Add(_goodDayPrompt);
+        _prompts.Add(_walkingOnSunshinePrompt);
+        _prompts.Add(_badDayPrompt);
+        _prompts.Add(_badDayAgainPrompt);
+        _prompts.Add(_problemSolvedPrompt);
+        _prompts.Add(_lifeIsAmazingPrompt);
         Console.WriteLine(_prompts);
+        Array _promptArray = _prompts.ToArray();
+        Console.WriteLine(_promptArray);
     }
 }

@@ -12,10 +12,10 @@ public class JournalMenu
 
     public void Display()
     {
-        foreach (JournalMenu choice in _choices)
-        {
+        //foreach (JournalMenu choice in _choices)
+        //{
            
-        if ()
+        //if ()
         // {
         //     gradeLetter = "A";
         //     //Console.WriteLine(gradeLetter);
@@ -50,16 +50,8 @@ public class JournalMenu
         // {
         //     Console.WriteLine("Congratulations! You passed!");
         // }
-        else
-        {
-            Console.WriteLine($@"Would you like to quit the program? Type yes or no."); 
-        }
-
-
-        // Prompts
-           choice.Display();
-        }
+        //else
+        //{
+        //Console.WriteLine($@"Would you like to quit the program? Type yes or no."); 
     }
-    
-
 }
