@@ -3,17 +3,28 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 public class Prompt
 {
-    //creating list which will be shuffled in Entry class
-    public List<string> _prompts = new List<string>(){"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
+    //creating list which will be shuffled in Entry class. info source: https://stackoverflow.com/questions/36401282/passing-listobject-between-classes.
+
+    //creating generic prompt ideas.Trying to keep OOP principles.
+    public string _weatherPrompt;
+    public string _spiritualPrompt;
+    public string _helpfulPrompt;
+    public string _gratefulPrompt;
+    public string _goodDayPrompt;
+    public string _walkingOnSunshinePrompt;
+    public string _badDayPrompt;
+    public string _badDayAgainPrompt;
+    public string _problemSolvedPrompt;
+    public string _lifeIsAmazingPrompt;
+    
 
 
     public Prompt()
     {
     }
-    public void Display()
+    public void allPrompts()
     {
-        Console.WriteLine(_prompts);
-
-        
+        List<string>_journalPrompts = new List<string>(){_weatherPrompt, _spiritualPrompt, _helpfulPrompt, _gratefulPrompt, _goodDayPrompt, _walkingOnSunshinePrompt, _badDayPrompt, _badDayAgainPrompt, _problemSolvedPrompt, _lifeIsAmazingPrompt};
+        //Console.WriteLine(_journalPrompts);
     }
 }

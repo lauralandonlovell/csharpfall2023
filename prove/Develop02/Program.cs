@@ -31,40 +31,22 @@ class Program
         {"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
         
         //code for Prompt
-        Prompt prompt1 = new Prompt();
-        prompt1._entryPrompt = ;
-        Prompt prompt2 = new Prompt();
-        prompt2._entryPrompt = ;
-        Prompt prompt3 = new Prompt();
-        prompt3._entryPrompt = ;
-        Prompt prompt4 = new Prompt();
-        prompt4._entryPrompt = ;
-        Prompt prompt5 = new Prompt();
-        prompt5._entryPrompt = ;
-        Prompt prompt6 = new Prompt();
-        prompt6._entryPrompt = "One challenge I overcame today was...";
-        Prompt prompt7 = new Prompt();
-        prompt7._entryPrompt = "I really like myself because...";
-
-        prompt1._prompts.Add(prompt1);
-        entry1._prompts.Add(prompt2);
-        entry1._prompts.Add(prompt3);
-        entry1._prompts.Add(prompt4);
-        entry1._prompts.Add(prompt5);
-        entry1._prompts.Add(prompt6);
-        entry1._prompts.Add(prompt7);
+        public string _weatherPrompt;
+        public string _spiritualPrompt;
+        public string _helpfulPrompt;
+        public string _gratefulPrompt;
+        public string _goodDayPrompt;
+        public string _walkingOnSunshinePrompt;
+        public string _badDayPrompt;
+        public string _badDayAgainPrompt;
+        public string _problemSolvedPrompt;
+        public string _lifeIsAmazingPrompt;
+        {"Today was wonderful because...", "Today I felt the Spirit with me when...", "I enjoyed helping when I...", "Today I was grateful for...", "Today I had a really good day because...",};
 
         //code for Entry
         Entry entry1 = new Entry();
         entry1._date = DateTime.Today;
-        random prompt
-        entry1._prompts.Add(prompt1);
-        entry1._prompts.Add(prompt2);
-        entry1._prompts.Add(prompt3);
-        entry1._prompts.Add(prompt4);
-        entry1._prompts.Add(prompt5);
-        entry1._prompts.Add(prompt6);
-        entry1._prompts.Add(prompt7);
+        
 
 
         //other features
