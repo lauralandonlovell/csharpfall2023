@@ -62,11 +62,14 @@ class Program
         prompt8._problemSolvedPrompt = "I prayed that I would be helped through my problems and ...";
         Prompt prompt9 = new Prompt();
         prompt9._lifeIsAmazingPrompt = "I saw my prayers answered today because...";
-        
+
         //code for Entry
         Entry entry1 = new Entry();
-        
         entry1._date = DateTime.Today;
+        entry1._textEntry = "";
+        Console.WriteLine($@"Enter a filepath: ");
+        Console.WriteLine($"Enter a file name: ");
+        entry1._saveEntry = ($"Save to file: {}}")
 
         
         //code for Signature

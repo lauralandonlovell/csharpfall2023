@@ -9,7 +9,8 @@ public class Entry
     public string _signature;
     public string _saveEntry;
     public string _loadEntry;
-    public Array[] _entryPrompts = new Array[9];
+    public Prompt[] _entryPrompts = new Prompt[9];
+
     public Entry()
     {
     }
