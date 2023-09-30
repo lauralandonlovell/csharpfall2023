@@ -1,28 +1,47 @@
 using System;
-using System.ComponentModel.Design;
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using static System.Math;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
 class Program
 {
     static void Main(string[] args)
     {   
         //Journal Class
         Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
+
         Console.WriteLine();
+        Console.WriteLine("1. Write Entry");
+        Console.WriteLine("2. Read Entry");
+        Console.WriteLine("3. Save Entry");
+        Console.WriteLine("4. Load Entry");
+        Console.WriteLine("5. Quit Journal Program");
+        Console.WriteLine();
+        Console.WriteLine("Type the menu number of your choice: ");
 
-        //code for JournalMenu
-        JournalMenu journalMenu = new JournalMenu();
-        journalMenu._writeEntry = "1. Write";
-        journalMenu._readEntry = "2. Read";
-        journalMenu._fetchEntry = "3. Load";
-        journalMenu._saveEntry = "4. Save";
-        journalMenu._quitJournal = "5. Quit";
+        int menuChoice = int.Parse(Console.ReadLine());
+        switch (menuChoice)
+        {
+            case 1:
+                _file
+                break;
+            case 2:
 
-        Console.WriteLine("Please type the item number of your choice from the menu: ");
-        string item = Console.ReadLine();
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+            break;
+        }
+            
         
+        
+
         //code for Prompt
         Prompt prompt0 = new Prompt();
         prompt0._weatherPrompt = "Today was wonderful because...";
@@ -44,6 +63,7 @@ class Program
         prompt8._problemSolvedPrompt = "I prayed that I would be helped through my problems and ...";
         Prompt prompt9 = new Prompt();
         prompt9._lifeIsAmazingPrompt = "I saw my prayers answered today because...";
+        
 
         //code for Entry
         Entry entry1 = new Entry();
