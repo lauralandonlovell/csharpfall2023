@@ -15,7 +15,6 @@ public class Journal
 
    public void Display()
    {
-      
       Console.WriteLine(_writeEntry);
       Console.WriteLine(_readEntry);
       Console.WriteLine(_saveEntry);
