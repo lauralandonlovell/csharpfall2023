@@ -9,7 +9,9 @@ class Program
     {   
         //Journal Class
         Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
+
         Console.WriteLine("Journal Menu");
+
         Journal journal1 = new Journal(); 
         Console.WriteLine();
         journal1._writeEntry = "1. Write Entry";
@@ -18,25 +20,25 @@ class Program
         journal1._loadEntry = "4. Load Entry";
         journal1._quitProgram = "5. Quit Journal Program";
 
-        int menuChoice = int.Parse(Console.ReadLine());
-        switch (menuChoice)
-        {
-            case 1:
+        // int menuChoice = int.Parse(Console.ReadLine());
+        // switch (menuChoice)
+        // {
+        //     case 1:
                 
-                break;
-            case 2:
+        //         break;
+        //     case 2:
 
-                break;
-            case 3:
+        //         break;
+        //     case 3:
 
-                break;
-            case 4:
+        //         break;
+        //     case 4:
 
-                break;
-            case 5:
+        //         break;
+        //     case 5:
 
-            break;
-        }
+        //     break;
+        // }
 
         //code for Prompt
         Prompt prompt0 = new Prompt();
@@ -75,13 +77,7 @@ class Program
         Console.WriteLine("Enter a file path: ");
         fileSign1._filePath = Console.ReadLine();
         Console.WriteLine("Enter a file name: ");
-        fileSign1._fileName = Console.ReadLine();
-        
-        
-
-        
-        
-            
+        fileSign1._fileName = Console.ReadLine();       
     }
 
 }
