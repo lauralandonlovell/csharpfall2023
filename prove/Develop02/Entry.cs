@@ -6,7 +6,8 @@ public class Entry
 {
     public DateTime _date;
     public string _textEntry;
-    public string _signature;
+    public string _filePath;
+    public string _fileName;
     public string _saveEntry;
     public string _loadEntry;
     public Prompt[] _entryPrompts = new Prompt[9];

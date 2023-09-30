@@ -9,9 +9,9 @@ class Program
     {   
         //Journal Class
         Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
-
-        Console.WriteLine();
         Console.WriteLine("Journal Menu");
+        Journal journal1 = new Journal();
+        journal1._writeEntry = 
         Console.WriteLine();
         Console.WriteLine("1. Write Entry");
         Console.WriteLine("2. Read Entry");
@@ -20,6 +20,8 @@ class Program
         Console.WriteLine("5. Quit Journal Program");
         Console.WriteLine();
         Console.WriteLine("Type the menu number of your choice: ");
+        Console.WriteLine($@"Enter a filepath: ");
+        _filePath = Console.ReadLine();
 
         int menuChoice = int.Parse(Console.ReadLine());
         switch (menuChoice)
@@ -67,12 +69,15 @@ class Program
         Entry entry1 = new Entry();
         entry1._date = DateTime.Today;
         entry1._textEntry = "";
-        Console.WriteLine($@"Enter a filepath: ");
         Console.WriteLine($"Enter a file name: ");
-        entry1._saveEntry = ($"Save to file: {}}")
-
+        entry1._fileName = Console.ReadLine();
+        Console.WriteLine("Enter a filepath: ");
+        entry1._filePath = Console.ReadLine();
+        Console.WriteLine($"Save to file: {entry1._fileName}");
         
         //code for Signature
+        FileSign fileSign1 = new FileSign();
+        
         
 
         
