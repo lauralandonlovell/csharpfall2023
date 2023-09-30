@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System.Transactions;
 
 public class Journal
@@ -22,6 +23,7 @@ public class Journal
       Console.WriteLine(_quitJournal);
       Console.WriteLine("Enter the number of your choice: ");
       _menuChoice = Console.ReadLine();
+      Console.WriteLine();
    }
    public static void StreamWriter()
    {
