@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {   
         //Journal Class
-        Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
+        Console.WriteLine("\nWelcome to the Journal Program. Enjoy keeping track of your day!\n");
 
         Console.WriteLine("Journal Menu");
 
