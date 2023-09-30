@@ -13,6 +13,6 @@ public class Journal
 
    public void Display()
    {
-    Console.WriteLine($)
+    Console.WriteLine("Test");
    }
 }
