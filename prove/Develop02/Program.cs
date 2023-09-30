@@ -18,27 +18,29 @@ class Program
         journal1._readEntry = "2. Read Entry";
         journal1._saveEntry = "3. Save Entry";
         journal1._loadEntry = "4. Load Entry";
-        journal1._quitProgram = "5. Quit Journal Program";
+        journal1._quitJournal = "5. Quit Journal Program";
+
+        journal1.Display();
 
         // int menuChoice = int.Parse(Console.ReadLine());
         // switch (menuChoice)
         // {
         //     case 1:
                 
-        //         break;
-        //     case 2:
+        // //         break;
+        // //     case 2:
 
-        //         break;
-        //     case 3:
+        // //         break;
+        // //     case 3:
 
-        //         break;
-        //     case 4:
+        // //         break;
+        // //     case 4:
 
-        //         break;
-        //     case 5:
+        // //         break;
+        // //     case 5:
 
-        //     break;
-        // }
+        // //     break;
+        // // }
 
         //code for Prompt
         Prompt prompt0 = new Prompt();

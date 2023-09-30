@@ -26,14 +26,9 @@ public class Entry
         Random random = new Random();
         var _randomPrompt = random.Next(0, _entryPrompts.Length);
         Console.WriteLine(_randomPrompt);
-       }
-        
-        
-
-
-
-        
-    }   
+       }   
+    }
+       
 }
     
     
