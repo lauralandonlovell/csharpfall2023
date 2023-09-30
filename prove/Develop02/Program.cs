@@ -6,7 +6,7 @@ using System.IO;
 class Program
 {
     static void Main(string[] args)
-    {   
+    {   //I exceeded requirements by adding extra classes and trying to have the program open to where they left off writing so they don't put off journaling because of having to restart the program everytime.My program runs but has a lot of logic errors!
         //Journal Class
         Console.WriteLine("\nWelcome to the Journal Program. Enjoy keeping track of your day!\n");
 
