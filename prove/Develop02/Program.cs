@@ -10,24 +10,19 @@ class Program
         //Journal Class
         Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
         Console.WriteLine("Journal Menu");
-        Journal journal1 = new Journal();
-        journal1._writeEntry = 
+        Journal journal1 = new Journal(); 
         Console.WriteLine();
-        Console.WriteLine("1. Write Entry");
-        Console.WriteLine("2. Read Entry");
-        Console.WriteLine("3. Save Entry");
-        Console.WriteLine("4. Load Entry");
-        Console.WriteLine("5. Quit Journal Program");
-        Console.WriteLine();
-        Console.WriteLine("Type the menu number of your choice: ");
-        Console.WriteLine($@"Enter a filepath: ");
-        _filePath = Console.ReadLine();
+        journal1._writeEntry = "1. Write Entry";
+        journal1._readEntry = "2. Read Entry";
+        journal1._saveEntry = "3. Save Entry";
+        journal1._loadEntry = "4. Load Entry";
+        journal1._quitProgram = "5. Quit Journal Program";
 
         int menuChoice = int.Parse(Console.ReadLine());
         switch (menuChoice)
         {
             case 1:
-                //_file
+                
                 break;
             case 2:
 
@@ -75,8 +70,12 @@ class Program
         entry1._filePath = Console.ReadLine();
         Console.WriteLine($"Save to file: {entry1._fileName}");
         
-        //code for Signature
+        //code for FileSign
         FileSign fileSign1 = new FileSign();
+        Console.WriteLine("Enter a file path: ");
+        fileSign1._filePath = Console.ReadLine();
+        Console.WriteLine("Enter a file name: ");
+        fileSign1._fileName = Console.ReadLine();
         
         
 
