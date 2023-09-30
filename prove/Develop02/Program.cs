@@ -18,7 +18,7 @@ class Program
         journal1._readEntry = "2. Read Entry";
         journal1._saveEntry = "3. Save Entry";
         journal1._loadEntry = "4. Load Entry";
-        journal1._quitJournal = "5. Quit Journal Program";
+        journal1._quitJournal = "5. Quit Journal Program\n";
 
         journal1.Display();
 
