@@ -37,6 +37,5 @@ public class Prompt
         _prompts[8] = _problemSolvedPrompt;
         _prompts[9] = _lifeIsAmazingPrompt;
         Console.WriteLine(_prompts);
-    }
-    public static 
+    } 
 }

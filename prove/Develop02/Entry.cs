@@ -17,7 +17,7 @@ public class Entry
     {
        Console.WriteLine($"Date: {_date}");
 
-       Console.WriteLine($"File Name:{_}");   
+       //Console.WriteLine($"File Name:{_}");   
     }
     
     

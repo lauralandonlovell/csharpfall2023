@@ -11,6 +11,8 @@ class Program
         Console.WriteLine("Welcome to the Journal Program. Enjoy keeping track of your day!");
 
         Console.WriteLine();
+        Console.WriteLine("Journal Menu");
+        Console.WriteLine();
         Console.WriteLine("1. Write Entry");
         Console.WriteLine("2. Read Entry");
         Console.WriteLine("3. Save Entry");
@@ -23,7 +25,7 @@ class Program
         switch (menuChoice)
         {
             case 1:
-                _file
+                //_file
                 break;
             case 2:
 
@@ -38,9 +40,6 @@ class Program
 
             break;
         }
-            
-        
-        
 
         //code for Prompt
         Prompt prompt0 = new Prompt();
@@ -64,7 +63,6 @@ class Program
         Prompt prompt9 = new Prompt();
         prompt9._lifeIsAmazingPrompt = "I saw my prayers answered today because...";
         
-
         //code for Entry
         Entry entry1 = new Entry();
         
