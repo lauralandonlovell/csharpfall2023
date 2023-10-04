@@ -17,11 +17,6 @@ class Program
 
         List<Person> people = new List<Person>();
         people.Add(p1);
-        people.Add(p2);
-
-
-
-
-                    
+        people.Add(p2);                
     }
 }    
