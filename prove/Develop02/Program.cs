@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.ComponentModel;
 class Program
 {
     static void Main(string[] args)
@@ -13,20 +14,32 @@ class Program
         Console.WriteLine("Journal Menu");
 
         Journal journal1 = new Journal(); 
-        Console.WriteLine();
         journal1._writeEntry = "1. Write Entry";
-        journal1._readEntry = "2. Read Entry";
-        journal1._saveEntry = "3. Save Entry";
-        journal1._loadEntry = "4. Load Entry";
-        journal1._quitJournal = "5. Quit Journal Program\n";
-
-        journal1.Display();
+        Journal journal2 = new Journal();
+        journal2._readEntry = "2. Read Entry";
+        Journal journal3 = new Journal();
+        journal3._saveEntry = "3. Save Entry";
+        Journal journal4 = new Journal();
+        journal4._loadEntry = "4. Load Entry";
+        Journal journal5 = new Journal();
+        journal5._quitJournal = "5. Quit Journal Program\n";
+        // foreach (Journal choice in journalMenu)
+        // {
+        //     Console.WriteLine(choice);
+        // }
+        List<Journal>journalMenu = new List<Journal>();
+        journalMenu.Add(journal1);
+        journalMenu.Add(journal2);
+        journalMenu.Add(journal3);
+        journalMenu.Add(journal4);
+        journalMenu.Add(journal5);
+        Console.WriteLine(journalMenu);
 
         int menuChoice = int.Parse(Console.ReadLine());
-        switch (menuChoice)
+        switch (journalMenu)
         {
             case 1:
-                
+                Console.WriteLine("1. Write Entry");
                 break;
             case 2:
 
