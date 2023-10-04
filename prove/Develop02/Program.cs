@@ -22,25 +22,25 @@ class Program
 
         journal1.Display();
 
-        // int menuChoice = int.Parse(Console.ReadLine());
-        // switch (menuChoice)
-        // {
-        //     case 1:
+        int menuChoice = int.Parse(Console.ReadLine());
+        switch (menuChoice)
+        {
+            case 1:
                 
-        // //         break;
-        // //     case 2:
+                break;
+            case 2:
 
-        // //         break;
-        // //     case 3:
+                break;
+            case 3:
 
-        // //         break;
-        // //     case 4:
+                break;
+            case 4:
 
-        // //         break;
-        // //     case 5:
+                break;
+            case 5:
 
-        // //     break;
-        // // }
+                break;
+        }
 
         //code for Prompt
         Prompt prompt0 = new Prompt();
