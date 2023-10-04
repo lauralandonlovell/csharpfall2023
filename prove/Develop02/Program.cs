@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks.Dataflow;
 class Program
 {
     static void Main(string[] args)
@@ -35,26 +37,72 @@ class Program
         journalMenu.Add(journal5);
         Console.WriteLine(journalMenu);
 
+
         int menuChoice = int.Parse(Console.ReadLine());
         switch (journalMenu)
         {
             case 1:
-                Console.WriteLine("1. Write Entry");
+                
+                {
+                   string fileName = "journalEntry1.txt";
+                   using (StreamWriter outputfile = new StreamWriter(fileName))
+                   {
+                        outputfile.WriteLine($"{Entry._entryPrompts}");
+                   }        
+                } 
+                Console.WriteLine(1);
                 break;
             case 2:
+                {
+                    {
+                        
+                        string filename = "journalEntry1.txt";
+                        string [] lines = System.IO.File.ReadAllLines(filename);
+
+                        foreach (string line in lines)
+                        {
+                            string[] parts = line.Split(",");
+
+                            string _date = parts[0];
+                            string _entryPrompts = parts[1];
+                            string _fileName = parts[2];
+                            string _filePath = parts[3];
+                            string _loadEntry = parts[4]; 
+                        }
+                    }
+                }
 
                 break;
-            case 3:
+            case 3: 
+            {
+                SaveToFile(List<journalMenu> (Journal.journalEntry1.txt));
+                Console.WriteLine("Saving to File");
 
+                string filename = "journalEntry1.txt";
+                using (StreamWriter outputFile = new StreamWriter(filename));
+                {
+                    StreamWriter outputFile = File.AppendText(Journal.journalEntry1.txt);
+                }
+            }
                 break;
             case 4:
-
+            {   using (StreamReader loadFile = new StreamReader ("journal1.txt"))
+                {
+                    string _journalEntry = loadFile.ReadAllText("journal1.txt");
+                }
+            }
                 break;
             case 5:
-
-                break;
+            {
+                Console.WriteLine("Type 5 to quit: ");
+                if (int menuChoice = 5)
+                {
+                    break;
+                }
+            }
+                
         }
-
+    }
         //code for Prompt
         Prompt prompt0 = new Prompt();
         prompt0._weatherPrompt = "Today was wonderful because...";
