@@ -4,14 +4,18 @@ using static System.Math;
 //displays date, random prompt, text entry, and signature.
 public class Entry
 {
+    //properties:
     public DateTime _date;
-    public string _textEntry;
+    public string _writeEntry;
+    public string _readEntry;
     public string _filePath;
     public string _fileName;
-    public string _saveEntry;
+
+    //methods:
+    public string _saveToMemory;
     public string _loadEntry;
     public string _randomPrompt;
-    public Prompt[] _entryPrompts = new Prompt[9];
+    // public Prompt[] _entryPrompts = new Prompt[9];
 
     
 
@@ -20,13 +24,13 @@ public class Entry
     }
     public void Display()
     {
-       Console.WriteLine($"Date: {_date}");
-       foreach (Prompt prompt in _entryPrompts)
-       {
-        Random random = new Random();
-        var _randomPrompt = random.Next(0, _entryPrompts.Length);
-        Console.WriteLine(_randomPrompt);
-       }   
+    //    Console.WriteLine($"Date: {_date}");
+    //    foreach (Prompt prompt in _entryPrompts)
+    //    {
+    //     Random random = new Random();
+    //     var _randomPrompt = random.Next(0, _entryPrompts.Length);
+    //     Console.WriteLine(_randomPrompt);
+    //    }   
     }
        
 }

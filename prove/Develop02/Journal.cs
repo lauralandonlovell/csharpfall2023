@@ -1,33 +1,15 @@
-using System.Runtime.CompilerServices;
-using System.Transactions;
-
+using System;
 public class Journal
 {
-   public string _writeEntry;
-   public string _readEntry;
-   public string _saveEntry;
-   public string _menuChoice;
-   public string _loadEntry;
-   public string _quitJournal;
-   public 
-   Journal()
-   {
-   }
-
-   public void Display()
-   {
-      Console.WriteLine(_writeEntry);
-      Console.WriteLine(_readEntry);
-      Console.WriteLine(_saveEntry);
-      Console.WriteLine(_loadEntry);
-      Console.WriteLine(_quitJournal);
-      Console.WriteLine("Enter the number of your choice: ");
-      _menuChoice = Console.ReadLine();
-      Console.WriteLine();
-   }
-   public static void StreamWriter()
-   {
-
-   }
+  //properties:
+  public string _journalName {get; set;}
+  public DateTime _dateCreated {get;}
+  public string _nameOfAuthor {get; set;}
+  
+  //methods:
+  public string _saveToDrive {get; set;}
+  public string _loadJournal {get; set;}
+  public string _deleteEntry {get; set;}
+  public string _quitJournal {get; set;}
 
 }
