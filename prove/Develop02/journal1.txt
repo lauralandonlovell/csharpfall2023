@@ -1,2 +1,4 @@
-Console.WriteLine(Entry._randomPrompt);
-Console.ReadLine();
+--Console.WriteLine(Entry._randomPrompt);
+--Console.ReadLine();
+
+--This is where I am supposed to be writing to, reading from, and saving the entries via csv.
