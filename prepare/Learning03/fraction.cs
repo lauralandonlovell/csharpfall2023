@@ -33,9 +33,14 @@ public class Fraction
     {
         _bottom = bottom;
     }
-    public string GetFractionString()
+    public string GetFractionString(string)
     {
-        return GetTop(top).ToString;
+        return ($"({SetTop(top).ToString()})/({SetBottom(bottom).ToString()}");
+    }
+    public double GetDecimalValue(double)
+    {
+        value = (GetFractionString.ToDouble);
+        return value
     }
 
 }
