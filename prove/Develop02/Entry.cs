@@ -7,7 +7,7 @@ public class Entry
     //properties:
     public DateTime _date;
     public string _writeEntry;
-    public string _readEntry;
+    //public string _readEntry;
     public string _filePath;
     public string _fileName;
 
@@ -16,6 +16,13 @@ public class Entry
     public string _loadEntry;
     public string _randomPrompt;
     // public Prompt[] _entryPrompts = new Prompt[9];
+
+    public string WhatToWrite()
+    { 
+        Random random = new Random();
+        var randomIndex = random.Next(0, _promptArray.Length);
+        Console.Write(_promptArray[randomIndex]);
+    }
 
     
 
