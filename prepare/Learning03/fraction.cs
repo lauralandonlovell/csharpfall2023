@@ -8,14 +8,19 @@ public class Fraction
 
     public Fraction()
     {
+        _top = 1;//numerator;
+        _bottom = 1;//denominator;
     }
-
-    public Fraction(int numerator, int denominator)
+    public Fraction(int wholeNumber)
     {
-        _top = numerator;
-        _bottom = denominator;
+        _top = wholeNumber;
+        _bottom = 1;
     }
-
+    public Fraction(int top, int bottom)
+    {
+        _top = top;
+        _bottom = bottom;
+    }
     public int GetTop()
     {
         return _top;
@@ -33,14 +38,14 @@ public class Fraction
     {
         _bottom = bottom;
     }
-    public string GetFractionString(string)
+    public string GetFractionString()
     {
-        return ($"({SetTop(top).ToString()})/({SetBottom(bottom).ToString()}");
+        string text = $"{_top}/{_bottom}";//($"({SetTop(top).ToString()})/({SetBottom(bottom).ToString()}");
+        return text;
     }
-    public double GetDecimalValue(double)
+    public double GetDecimalValue()
     {
-        value = (GetFractionString.ToDouble);
-        return value
+        //value = (GetFractionString.ToDouble);
+        return (double)_top/ (double)_bottom;//value
     }
-
 }
