@@ -21,23 +21,23 @@ public class Fraction
         _top = top;
         _bottom = bottom;
     }
-    public int GetTop()
-    {
-        return _top;
-    }
-    public int SetTop(int top)
-    {
-        _top = top; 
-    }
+    // public int GetTop()
+    // {
+    //     return _top;
+    // }
+    // public int SetTop(int top)
+    // {
+    //     _top = top; 
+    // }
     
-    public int GetBottom()
-    {
-        return _bottom;
-    }
-    public int SetBottom(int bottom)
-    {
-        _bottom = bottom;
-    }
+    // public int GetBottom()
+    // {
+    //     return _bottom;
+    // }
+    // public int SetBottom(int bottom)
+    // {
+    //     _bottom = bottom;
+    // }
     public string GetFractionString()
     {
         string text = $"{_top}/{_bottom}";//($"({SetTop(top).ToString()})/({SetBottom(bottom).ToString()}");
